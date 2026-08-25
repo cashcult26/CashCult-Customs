@@ -97,6 +97,48 @@
     <button type="submit" class="drip-button form-button">SEND MY REQUEST →</button>
     <p id="form-message"></p>
   </form>
+  <section class="deposit-section">
+  <h2>SECURE YOUR CUSTOM ORDER</h2>
+
+  <p class="deposit-text">
+    Your design must be reviewed and approved before paying a deposit.
+    Once approved, choose the deposit amount we tell you to pay.
+  </p>
+
+  <div class="deposit-options">
+
+    <div class="deposit-card">
+      <h3>STANDARD CUSTOM</h3>
+      <div class="deposit-price">$75</div>
+      <p>
+        For approved standard custom engraving orders.
+        Non-refundable. Applied toward your final order balance.
+      </p>
+
+      <a href="https://buy.stripe.com/6oUeVfbn88HIcXvffQ6EU00"
+         target="_blank"
+         class="deposit-button">
+        PAY $75 DEPOSIT →
+      </a>
+    </div>
+
+    <div class="deposit-card">
+      <h3>DETAILED CUSTOM</h3>
+      <div class="deposit-price">$100</div>
+      <p>
+        For approved detailed or complex custom orders.
+        Non-refundable. Applied toward your final order balance.
+      </p>
+
+      <a href="https://buy.stripe.com/8x228t3UG6zA4qZ0kW6EU01"
+         target="_blank"
+         class="deposit-button">
+        PAY $100 DEPOSIT →
+      </a>
+    </div>
+
+  </div>
+</section>
 </section>
 </main>
 
@@ -109,3 +151,95 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+/* CA$HCULT CUSTOMS DEPOSIT SECTION */
+.deposit-section {
+  background: #09080c;
+  border-top: 1px solid #3b2a48;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.deposit-section h2 {
+  color: #b17ae6;
+  font-family: UnifrakturCook, serif;
+  font-size: 42px;
+  margin: 0 0 18px;
+}
+
+.deposit-text {
+  color: #b9b2c0;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.deposit-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.deposit-card {
+  background: linear-gradient(145deg, #15111a, #09080c);
+  border: 1px solid #513866;
+  padding: 35px 28px;
+  box-shadow: 0 0 30px rgba(140, 87, 200, 0.12);
+}
+
+.deposit-card h3 {
+  color: #eee9f3;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.deposit-price {
+  color: #b17ae6;
+  font-family: UnifrakturCook, serif;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.deposit-card p {
+  color: #aaa4b0;
+  font-size: 12px;
+  line-height: 1.7;
+  min-height: 65px;
+}
+
+.deposit-button {
+  display: inline-block;
+  background: #8c57c8;
+  color: white;
+  text-decoration: none;
+  padding: 16px 22px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: 1px solid #b17ae6;
+  box-shadow: 0 0 18px rgba(140, 87, 200, 0.25);
+}
+
+.deposit-button:hover {
+  background: #b17ae6;
+  color: #09080c;
+}
+
+@media (max-width: 600px) {
+  .deposit-options {
+    grid-template-columns: 1fr;
+  }
+
+  .deposit-section {
+    padding: 55px 25px;
+  }
+}
+
